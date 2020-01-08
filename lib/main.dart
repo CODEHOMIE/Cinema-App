@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:cinema_app/screens/landing_page.dart';
-import 'package:cinema_app/styles/ujuzy_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
