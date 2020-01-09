@@ -2,6 +2,7 @@ import 'package:cinema_app/api/services.dart';
 import 'package:cinema_app/api/urls.dart';
 import 'package:cinema_app/constants/constants.dart';
 import 'package:cinema_app/models/trend.dart';
+import 'package:cinema_app/screens/view_movie.dart';
 import 'package:cinema_app/styles/cinema_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -63,14 +64,14 @@ class _TopShowingMoviesState extends State<TopShowingMovies>
                 child: InkWell(
                   splashColor: CinemaAppTheme.background,
                   onTap: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => ViewMovieScreen(
-                    //             index: index,
-                    //             movieObj: _trend,
-                    //           )),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ViewMovieScreen(
+                                index: index,
+                                movieObj: _trend,
+                              )),
+                    );
                   },
                   child: Container(
                     decoration: BoxDecoration(color: CinemaAppTheme.background),
